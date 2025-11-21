@@ -88,3 +88,16 @@ h1 {
   text-decoration: none;
   font-family: 'Noto Serif';
 }
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
