@@ -1,0 +1,19 @@
+baseURL = "https://mynewhugosite.com"
+title = "MISE"
+theme = "hugo-starter-theme"
+
+[params]
+  subtitle = "Some evocative subtitle here"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 20
