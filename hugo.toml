@@ -1,6 +1,6 @@
 baseURL = "https://miseqda.com"
 title = "MISE"
-theme = "hugo-starter-theme"
+theme = "time-theme"
 
 [params]
   subtitle = "Open Souce Qualitative Data Analysis"
