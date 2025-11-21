@@ -5,4 +5,6 @@ menu:
     weight: 20
 ---
 
-Content for installation.
+Install from GitHub
+
+- [Releases](https://github.com/TimothyElder/mise/releases)
