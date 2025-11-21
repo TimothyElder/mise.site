@@ -1,5 +1,5 @@
 body {
-  font-family: 'Noto Sans';font-size: 22px;
+  font-family: 'Noto Serif'; font-size: 22px;
   color: #333;
   font-size: 125%;
   line-height: 1.5;
@@ -11,7 +11,14 @@ body {
 .content {
   margin-bottom: 2rem;
   text-decoration: none;
-  font-family: 'Noto Serif';
+}
+
+footer {
+  font-family: "Noto Sans";
+}
+
+h1 {
+  font-family: 'Noto Sans', 'Gill Sans', sans-serif;
 }
 
 /* Header layout */
@@ -43,8 +50,8 @@ body {
 
 .site-subtitle {
   margin: 0.25rem 0 0;
-  font-family: 'Noto Serif';
-  font-size: 1rem;
+  font-family: 'Noto Sans';
+  font-size: 1.5rem;
   color: #666;
 }
 
@@ -61,6 +68,7 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-family: 'Noto Sans';
 }
 
 .main-menu a {

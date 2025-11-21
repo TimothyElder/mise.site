@@ -2,8 +2,6 @@
 title: "Home"
 ---
 
-# Hi there
+![mise](mise.png)
 
-Welcome to your new Hugo site. Hereis a [link](https://timothyelder.com)
-
-Now go build something great.
+Mise ("meez") is an open source qualitative data analysis software that seeks to offer similar functionality to the paid alternatives, while being free to the user.
