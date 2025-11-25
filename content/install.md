@@ -5,10 +5,9 @@ menu:
     weight: 20
 ---
 
-Mise is currently in early development but the 0.0.1 version is currently available for Windows, macOS, and Linux. Installation instructions for each OS is enumerated below.
+Mise is currently in early development but the 0.1.0 alpha release is available for macOS. Windows and Linux support will be released in the coming weeks.
 
-{{< tabs "uniqueid" >}}
-{{< tab "macOS" >}}
+## Install from source
 
 Mise can be installed from the source using git and the command line:
 
@@ -19,18 +18,3 @@ make install
 make build-macos
 # dist/Mise.app appears
 ```
-
-{{< /tab >}}
-
-{{< tab "Windows" >}}
-
-Windows instructions
-{{< /tab >}}
-{{< tab "Linux" >}}
-
-**Warning**: Mise has not been tested on Linux.
-
-Linux Instructions
-
-{{< /tab >}}
-{{< /tabs >}}

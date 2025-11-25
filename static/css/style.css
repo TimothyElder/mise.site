@@ -1,6 +1,20 @@
+/* =========================
+   Base & Typography
+   ========================= */
+
+:root {
+  --font-sans: "Noto Sans", -apple-system, BlinkMacSystemFont,
+               "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Noto Serif", "Georgia", "Times New Roman", serif;
+
+  --color-text: #333;
+  --color-accent: #32a852;
+  --color-muted: #666;
+}
+
 body {
-  font-family: 'Noto Serif';
-  color: #333;
+  font-family: var(--font-serif);
+  color: var(--color-text);
   font-size: 125%;
   line-height: 1.5;
   max-width: 45rem;
@@ -8,43 +22,41 @@ body {
   margin: 0 auto;
 }
 
-/* h1,
+h1,
 h2,
 h3,
 h4,
 h5 {
-  font-weight: $body-font-weight;
-} */
-
-a.logo {
-  text-decoration: none;
-  font-family: 'Noto Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-size: 80px;
-  color: black;
+  font-family: var(--font-sans);
+  margin-top: 0; /* optional reset */
 }
 
 .content {
   margin-bottom: 2rem;
   text-decoration: none;
+  font-family: var(--font-serif);
 }
 
-footer {
-  font-family: "Noto Sans";
-  color: grey;
-  font-size: 15px;
-  text-align: center;
+/* =========================
+   Links & Logo
+   ========================= */
 
+a.logo {
+  text-decoration: none;
+  font-family: var(--font-sans);
+  font-size: 80px;
+  color: black;
 }
 
-h1 {
-  font-family: 'Noto Sans', 'Gill Sans', sans-serif;
+/* generic nav links */
+.main-menu a {
+  text-decoration: none;
+  color: var(--color-accent);
 }
 
-h2 {
-  font-family: 'Noto Sans', 'Gill Sans', sans-serif;
-}
-
-/* Header layout */
+/* =========================
+   Header & Branding
+   ========================= */
 
 .site-header {
   text-align: center;
@@ -58,13 +70,13 @@ h2 {
 
 .site-title {
   margin: 0;
-  font-family: 'Noto Sans';
+  font-family: var(--font-sans);
   font-size: 2rem; /* tweak as needed */
 }
 
 .site-title a {
   text-decoration: none;
-  color: inherit; /* so it uses the <h1> font color */
+  color: inherit;
 }
 
 .site-title a:hover {
@@ -73,12 +85,14 @@ h2 {
 
 .site-subtitle {
   margin: 0.25rem 0 0;
-  font-family: 'Noto Sans';
+  font-family: var(--font-sans);
   font-size: 1.5rem;
-  color: #666;
+  color: var(--color-muted);
 }
 
-/* Navigation */
+/* =========================
+   Navigation
+   ========================= */
 
 .site-nav {
   display: flex;
@@ -91,19 +105,12 @@ h2 {
   list-style: none;
   margin: 0;
   padding: 0;
-  font-family: 'Noto Sans';
+  font-family: var(--font-sans);
 }
 
-.main-menu a {
-  text-decoration: none;
-  color: #32a852;
-}
-
-.content {
-  margin-bottom: 2rem;
-  text-decoration: none;
-  font-family: 'Noto Serif';
-}
+/* =========================
+   Hero Image
+   ========================= */
 
 .hero-image {
   display: flex;
@@ -118,7 +125,20 @@ h2 {
   display: block;
 }
 
-/* --- Tabs shortcode --- */
+/* =========================
+   Footer
+   ========================= */
+
+footer {
+  font-family: var(--font-sans);
+  color: grey;
+  font-size: 15px;
+  text-align: center;
+}
+
+/* =========================
+   Tabs Shortcode
+   ========================= */
 
 .book-tabs {
   margin: 1rem 0;
@@ -161,4 +181,41 @@ h2 {
 /* …and show its content block */
 .book-tabs input.toggle:checked + label + .book-tabs-content {
   display: block;
+}
+
+/* =========================
+   Booktabs-style tables
+   ========================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-family: var(--font-sans); /* or var(--font-serif) if you prefer */
+}
+
+/* Cell padding, no vertical borders */
+table th,
+table td {
+  padding: 0.35rem 0.75rem;
+  text-align: left;
+  border-left: none;
+  border-right: none;
+}
+
+/* Top rule + header-bottom (acts like \toprule + \midrule) */
+table thead th {
+  border-top: 2px solid #000;    /* \toprule */
+  border-bottom: 1px solid #000; /* \midrule */
+}
+
+/* Body: no gridlines by default (booktabs philosophy) */
+table tbody td {
+  border-top: none;
+  border-bottom: none;
+}
+
+/* Bottom rule on last row of body (\bottomrule) */
+table tbody tr:last-child td {
+  border-bottom: 2px solid #000;
 }
