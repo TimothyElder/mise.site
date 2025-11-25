@@ -8,6 +8,14 @@ body {
   margin: 0 auto;
 }
 
+/* h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: $body-font-weight;
+} */
+
 a.logo {
   text-decoration: none;
   font-family: 'Noto Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -22,9 +30,17 @@ a.logo {
 
 footer {
   font-family: "Noto Sans";
+  color: grey;
+  font-size: 15px;
+  text-align: center;
+
 }
 
 h1 {
+  font-family: 'Noto Sans', 'Gill Sans', sans-serif;
+}
+
+h2 {
   font-family: 'Noto Sans', 'Gill Sans', sans-serif;
 }
 
@@ -99,5 +115,50 @@ h1 {
 .hero-image img {
   max-width: 100%;
   height: auto;
+  display: block;
+}
+
+/* --- Tabs shortcode --- */
+
+.book-tabs {
+  margin: 1rem 0;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Hide the radio buttons */
+.book-tabs input.toggle {
+  display: none;
+}
+
+/* Tab labels */
+.book-tabs label {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  font-weight: 500;
+}
+
+/* Content panels */
+.book-tabs .book-tabs-content {
+  order: 999;          /* push all content blocks to the end */
+  width: 100%;
+  border-top: 1px solid #f0f0f0;
+  padding: 1rem;
+  display: none;       /* hidden by default */
+}
+
+/* When a tab is selected, style the label… */
+.book-tabs input.toggle:checked + label {
+  border-bottom-color: #007acc;   /* or your accent color */
+}
+
+/* …and show its content block */
+.book-tabs input.toggle:checked + label + .book-tabs-content {
   display: block;
 }
