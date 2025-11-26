@@ -5,7 +5,9 @@ menu:
     weight: 20
 ---
 
-Mise is currently in early development but the 0.1.0 alpha release is available for macOS. Windows and Linux support will be released in the coming weeks.
+Mise is currently in early development but the 0.1.0 alpha release is available for macOS and Windows. Linux support will be released in the coming weeks.
+
+You can download the binary files from GitHub for you specific OS on the [Releases page](https://github.com/TimothyElder/mise/releases)
 
 ## Install from source
 
