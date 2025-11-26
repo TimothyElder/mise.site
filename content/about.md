@@ -9,22 +9,23 @@ menu:
 
 — Anthony Bourdain, *Le Halles Cookbook*
 
-Qualitative scientists use a variety of methods for analyzing their data. Some of these are informal and specialized to the task and researcher, and others rely upon a paradigm long-established and reliant upon software to complete successfully. Computer-assisted qualitative data analysis software is largely proprietary and closed, obscuring project files into obscure objects that bind the researcher to that software, as well as providing an excess of features that force a steep learning curve. The open source alternatives narrowly focus on a particular discipline or type of data, poorly supported, or have a steep learning curve. [Mise](https://en.wikipedia.org/wiki/Mise_en_place) fills the gap between the highly functional, but closed and proprietary software packages, and the narrow open source software.
+Qualitative scientists use a variety of methods for analyzing their data. Some of these are informal and specialized to the task and researcher, and others depend upon a paradigm that relies upon software to complete successfully. Most of the software available to assist researchers in their analysis of qualitative data is proprietary, locking researchers to their software, and providing an excess of features that clutter the digital workspace. The available open source alternatives narrowly focus on a particular discipline or type of data, are poorly supported, or have their own steep learning curve.
 
-Mise is open source, free to use and extend, and capable of running on macOS, Linux, and Windows. It keeps your data in open formats that will endure indefinitely, and the design of Mise keeps you as close to your data as possible. Further, it is not bloated with features or narrow functions. If you have used Atlas.ti, Nvivo, or Dedoose before, you will quickly be able to take up and use Mise.
+Mise offers a middle path between these two alternatives and is designed with the culinary principal of [*mise en place*](https://en.wikipedia.org/wiki/Mise_en_place), the parsimonious and deliberate organization of material needed for the task at hand. Mise is open source, free to use and extend, and capable of running on macOS, Linux, and Windows. It keeps your data in open formats that promise to endure indefinitely, designed to keep you as close to your data as possible, and is not bloated with unnecessary features or narrow functions. If you have used Atlas.ti, Nvivo, or Dedoose before, you will quickly be able to take up and use Mise.
 
 ## Design Principles
 
 1. **You control *your* data**
 
-Mise is designed with a plain text paradigm of completing research in mind, and keeps your project files in a standard `.txt`. Document, tags, and coded segments of documents are stored in a SQLite database whose organization is legible and explicit to the end-user.
+Mise is designed with a plain text paradigm for conducting research in mind, and doesn't lock the user into proprietary binary files. Your data in Mise remains interpretable and exportable without using Mise itself. You can automate, version and audit all your project files, allowing your work to remain autonomous, transparent, and reproducibile.
 
 2. **Simplicity first**
 
-Mise's design is straightforward, and encourages the qualitative coder to assign mutually exclusive tags to segments of text. This is a methodological decision not simply for software, but for the generative process of engaging in the coding process. Further, nested codes are confined to a parent-child relationship, where a parent code can have many child, or sub-codes, but child codes have no progeny.
+
+The design of Mise discourages over-coding and taxonomic sprawl by requiring the assignment of mutually exclusive tags to segments of text. Rather than a simple constraint imposed by the limits of software, this is a deliberate methodological choice. Coding schemes are confined to a set of parent-child codes, where parent codes can have many child, or sub-codes, but child codes have no progeny. This shallow hierarchy prevents coding schemes from growing narrower and narrower increasing the speed of analysis and the reliability of insight.
 
 3. **Portability**
 
-Mise is meant to be accessible regardless of the specific OS you use. Windows, macOS, and Linux are included, and the open-source format for data storage means that it can be stored in a cloud service for collaboration.
+Mise runs on macOS, Windows, and Linux, and projects move between them without any conversion or migration steps. Because the software is freely available and not tied to restrictive licensing, teams can work across different machines and operating systems without barriers. Open, simple project formats also support long-term accessibility beyond the lifecycle of any single device or platform.
 
 For more information about the specific design choices made in the development of Mise, please see the [Documentation]({{< relref "documentation.md" >}}) page.

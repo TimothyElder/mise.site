@@ -2,6 +2,8 @@
 title: "Documentation"
 ---
 
+keeps your project files in a standard `.txt` format. Documents, tags, and coded segments of documents are stored in a SQLite database whose organization is legible, explicit, and published to the end-user.
+
 Work in Mise is organized around "projects", containers for documents, the project database, configuration files and metadata related to the coding and analysis being done. Each project should contain a discrete collection of data from a specific social scientific intervention.
 
 Every project in Mise follows this schema:
