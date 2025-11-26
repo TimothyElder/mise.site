@@ -220,8 +220,6 @@ table tbody tr:last-child td {
   border-bottom: 2px solid #000;
 }
 
-
-
 /* Base fenced block */
 pre code {
   display: block;

@@ -4,7 +4,11 @@ title: "Documentation"
 
 ## Core Design
 
-keeps your project files in a standard `.txt` format. Documents, tags, and coded segments of documents are stored in a SQLite database whose organization is legible, explicit, and published to the end-user.
+The core design principle of Mise is to intentionally organize data to promote the cognitive task of creating and assigning analytic codes to qualitative material. Data is kept in as accessible a format as possible and project data is never obscured by elaborate or obtuse storage schemes.
+
+Specifically, the text to be analyzed, imported from `.docx`, `.pdf` and `.md` files, are stored in a standard `.txt` format, so source files are never touched during analysis. Document metadata, tags, and coded segments of documents are stored in a SQLite database whose organization is legible, explicit, and published to the end-user.
+
+Conceptually, you can think of Mise as a thin software layer that sits atop a more substantial layer that organizes data, functioning as an API that allows the user to create relationships between codes and text, and then examine these relationships systematically.
 
 ## Projects
 
