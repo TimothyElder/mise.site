@@ -262,3 +262,16 @@ pre code.language-sql {
   margin-top: 1rem;
   text-align: center;
 }
+
+/* Github Icon Footer */
+
+footer .github-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: inherit; /* inherits footer color */
+}
+
+footer .github-icon {
+  width: 15px;
+  height: 15px;
+}

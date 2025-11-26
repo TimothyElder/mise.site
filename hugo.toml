@@ -4,3 +4,4 @@ theme = "time-theme"
 
 [params]
   subtitle = "Open Souce Qualitative Data Analysis"
+  github = "https://github.com/TimothyElder/mise"
